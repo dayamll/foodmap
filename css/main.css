@@ -4,12 +4,18 @@
   font-family: 'Raleway';
 }
 
+body {
+  background-color: #333;
+}
+
+/* estilos del preload */
+
 .loader-title {
   color: rgb(255, 164, 28);
-  margin: 6.5em auto 1em auto;
-  font-size: 40px;
-  text-align: center;
+  margin-top: 180px;
+  font-size: 55px;
   font-weight: 800;
+  text-align: center;
 }
 
 #preloader {
@@ -35,17 +41,39 @@
   margin: -200px 0 0 -480px;
 }
 
-.title-principal,
+/* estilos de pagina principal */
+
+.title-principal {
+  color: rgb(255, 164, 28);
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
 .subtitle {
   color: rgb(255, 164, 28);
   text-align: center;
-  margin-top: 2em;
-  font-size: 40px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .yellow-line {
-  width: 70%;
-  margin: 15px;
+  width: 100%;
+  margin-top: 15px;
   border: 1px solid rgb(255, 164, 28);
 }
 
+/* estilos del input */
+
+.input-group {
+  padding: 1em;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.glyphicon {
+  top: 0;
+}
