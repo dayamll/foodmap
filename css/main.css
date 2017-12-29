@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway';
+}
+
+.loader-title {
+  color: rgb(255, 164, 28);
+  margin: 6.5em auto 1em auto;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgb(255, 0, 106) 45%,rgb(0, 0, 0));
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+}
+
+#status {
+  background: url(../assets/images/shin-chan.gif_c200);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 920px;
+  height: 532px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -480px;
+}
+
+.title-principal,
+.subtitle {
+  color: rgb(255, 164, 28);
+  text-align: center;
+  margin-top: 2em;
+  font-size: 40px;
+}
+
+.yellow-line {
+  width: 70%;
+  margin: 15px;
+  border: 1px solid rgb(255, 164, 28);
+}
+
