@@ -1,7 +1,7 @@
 * {
-  padding: 0;
-  margin: 0;
   font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -12,68 +12,161 @@ body {
 
 .loader-title {
   color: rgb(255, 164, 28);
-  margin-top: 180px;
   font-size: 55px;
   font-weight: 800;
+  margin-top: 180px;
   text-align: center;
 }
 
 #preloader {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: linear-gradient(rgb(255, 0, 106) 45%,rgb(0, 0, 0));
-  z-index: 9999;
+  bottom: 0;
   height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 #status {
   background: url(../assets/images/shin-chan.gif_c200);
   background-position: center;
   background-repeat: no-repeat;
-  width: 920px;
   height: 532px;
+  margin: -200px 0 0 -480px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -200px 0 0 -480px;
+  width: 920px;
 }
 
 /* estilos de pagina principal */
 
 .title-principal {
   color: rgb(255, 164, 28);
-  text-align: center;
-  margin-top: 30px;
   font-size: 40px;
   font-weight: 800;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .subtitle {
   color: rgb(255, 164, 28);
-  text-align: center;
-  margin-top: 30px;
   font-size: 30px;
   font-weight: 800;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .yellow-line {
-  width: 100%;
-  margin-top: 15px;
   border: 1px solid rgb(255, 164, 28);
+  margin-top: 15px;
+  width: 100%;
+}
+
+.space1 {
+  margin: 20px;
 }
 
 /* estilos del input */
 
 .input-group {
-  padding: 1em;
+  margin: 0 auto;
   max-width: 500px;
   min-width: 250px;
-  margin: 0 auto;
+  padding: 1em;
 }
 
 .glyphicon {
   top: 0;
 }
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* seccion de restaurantes */
+
+.all-boxes,
+.box {
+  background-size: cover;
+  cursor: pointer;
+  height: 10em;
+  margin: 1px 4%;
+  padding: 0;
+  position: relative;
+}
+
+.image {
+  border-radius: 8px;
+  height: 110px;
+  width: 100%;
+}
+
+.titles-box {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 3;
+}
+
+/*Estilos modal*/
+
+.modal-open .modal {
+  margin: 25px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 2em auto;
+  width: 50%;
+}
+
+.place-info{
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  width: 50%;
+}
+
+.review {
+  display: inline-block;
+  margin-top: -20px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 50%;
+}
+
+.restaurant-info {
+  margin-bottom: 40px;
+  color: black;
+}
+ 
+.subtitles {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.place-info span,
+.review span {
+  color: rgb(7, 6, 5);
+  font-size: 30px;
+}
+
+
