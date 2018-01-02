@@ -5,7 +5,13 @@
 }
 
 body {
-  background-color: #333;
+  background: url(../assets/images/fondo.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* estilos del preload */

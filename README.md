@@ -15,5 +15,6 @@ Flujo de la Aplicacion:
 
 * Una vez cerrado el modal debe volver a la vista principal. 
 
-
+# Aplicacion terminada #
+![Sin titulo](assets/images/food.gif)
 

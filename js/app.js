@@ -31,8 +31,6 @@ $('#inputSearch').keyup(function() {
   });
 });
 
-// Informacion dentro de modal
-
 $('.all-boxes').on('click', function() {
   for (i = 0; i < restaurants.length; i++) {
     if ($(this).restaurant('name') === restaurants[i].name);
