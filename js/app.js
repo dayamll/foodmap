@@ -20,10 +20,10 @@ restaurant();
 
 // se ejecuta esta funcion cuando el usuario busca por nombre.
 
-$('#inputSearch').keyup(function () {
+$('#inputSearch').keyup(function() {
   var name = $(this).val().toLowerCase();
   $('.group').hide();
-  $('.group').each(function () {
+  $('.group').each(function() {
     var search = $(this).text();
     if (search.indexOf(name) !== -1) {
       $(this).show();

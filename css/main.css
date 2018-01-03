@@ -10,7 +10,6 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -124,24 +123,35 @@ body {
 }
 
 /*Estilos modal*/
+.modal-body {
+  background: rgba(248, 0, 103, 0.548);
+}
+
+.close {
+  font-size: 50px;
+}
 
 .modal-open .modal {
   margin: 25px;
 }
 
 .modal-header {
+  background: rgba(248, 0, 103, 0.548);
   border-bottom: none;
 }
 
 .modal-footer {
+  background: rgba(248, 0, 103, 0.548);
   border-top: none;
   text-align: center;
 }
 
 .logo {
   display: block;
-  margin: 2em auto;
-  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  width: 55%;
 }
 
 .place-info{
@@ -153,7 +163,6 @@ body {
 
 .review {
   display: inline-block;
-  margin-top: -20px;
   text-align: center;
   text-transform: capitalize;
   width: 50%;
