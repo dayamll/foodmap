@@ -20,10 +20,10 @@ restaurant();
 
 // se ejecuta esta funcion cuando el usuario busca por nombre.
 
-$('#inputSearch').keyup(function() {
+$('#inputSearch').keyup(function () {
   var name = $(this).val().toLowerCase();
   $('.group').hide();
-  $('.group').each(function() {
+  $('.group').each(function () {
     var search = $(this).text();
     if (search.indexOf(name) !== -1) {
       $(this).show();
@@ -33,12 +33,13 @@ $('#inputSearch').keyup(function() {
 
 $('.all-boxes').on('click', function() {
   for (i = 0; i < restaurants.length; i++) {
-    if ($(this).restaurant('name') === restaurants[i].name);
-    $('.logo-rest').attr('src', restaurants[i].logo);
-    $('.ubication').attr('src', restaurants[i].ubication);
-    $('.direction').text(restaurants[i].description);
-    $('.district').text(restaurants[i].address);
-    $('.restaurants-stars').text(restaurants[i].stars);
-    $('.price').text(restaurants[i].money);
+    if (restaurants[i]['name'] === $(this).data('name')) {
+      $('.logo-rest').attr('src', restaurants[i].logo);
+      $('.ubication').append(restaurants[i].ubication);
+      $('.direction').text(restaurants[i].description);
+      $('.district').text(restaurants[i].address);
+      $('.restaurants-stars').text(restaurants[i].stars);
+      $('.price').text(restaurants[i].money);
+    }
   }
 });
